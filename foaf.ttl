@@ -18,5 +18,10 @@
 <foaf:homepage rdf:resource="https://mk.linkedin.com/in/tijana-stojanovska-83a34520b"/>
 <foaf:workplaceHomepage rdf:resource="https://nextsense.com/"/>
 <foaf:workInfoHomepage rdf:resource="https://dbpedia.org/page/Software_engineering"/>
-<foaf:schoolHomepage rdf:resource="https://www.finki.ukim.mk/"/></foaf:Person>
+<foaf:schoolHomepage rdf:resource="https://www.finki.ukim.mk/"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Dijana</foaf:name>
+<foaf:mbox_sha1sum>c4304a571ef27211aa1157e1b45f6c66280955ff</foaf:mbox_sha1sum>
+<rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/dijanasazdevska/foaf/main/foaf.ttl?fbclid=IwAR2L8tdtmJxHgCK-vqZUzMTf1vgnpOCXP0MuUYfCoNn8-9B6c_jYGECbxjw"/></foaf:Person></foaf:knows></foaf:Person>
 </rdf:RDF>
