@@ -28,5 +28,5 @@
         foaf:nick               "Tiki" ;
         foaf:schoolHomepage     <https://www.finki.ukim.mk/> ;
         foaf:title              "Mrs" ;
-        foaf:workInfoHomepage   < https://dbpedia.org/page/Software_engineering> ;
+        foaf:workInfoHomepage   <https://dbpedia.org/page/Software_engineering> ;
         foaf:workplaceHomepage  <https://nextsense.com/> .
