@@ -1,34 +1,32 @@
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns0: <http://webns.net/mvcb/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<http://njh.me/>
-  a foaf:PersonalProfileDocument ;
-  foaf:maker <http://njh.me/#me> ;
-  foaf:primaryTopic <http://njh.me/#me> ;
-  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
-  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+<>      a                     foaf:PersonalProfileDocument ;
+        admin:errorReportsTo  <mailto:leigh@ldodds.com> ;
+        admin:generatorAgent  <http://www.ldodds.com/foaf/foaf-a-matic> ;
+        foaf:maker            <#me> ;
+        foaf:primaryTopic     <#me> .
 
-<http://njh.me/#me>
-  a foaf:Person ;
-  foaf:name "Tijana Stojanovska" ;
-  foaf:title "Mrs" ;
-  foaf:givenname "Tijana" ;
-  foaf:family_name "Stojanovska" ;
-  foaf:nick "Tiki" ;
-  foaf:mbox_sha1sum "7bba26dd25256a2601948a97a22da2f50762c32b" ;
-  foaf:homepage <https://mk.linkedin.com/in/tijana-stojanovska-83a34520b> ;
-  foaf:workplaceHomepage <https://nextsense.com/> ;
-  foaf:workInfoHomepage < https://dbpedia.org/page/Software_engineering> ;
-  foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
-  foaf:knows [
-    a foaf:Person ;
-    foaf:name "Viktor Ivanovski" ;
-    foaf:mbox_sha1sum "c76d892d6b6a27e0bf4101bcd3306de677782a0f" ;
-    rdfs:seeAlso <https://www.dropbox.com/s/z75y2xrotvh4g6i/foaf.ttl?dl=1>
-  ], [
-    a foaf:Person ;
-    foaf:name "Dijana Sazdevska" ;
-    foaf:mbox_sha1sum "c4304a571ef27211aa1157e1b45f6c66280955ff" ;
-    rdfs:seeAlso <https://raw.githubusercontent.com/dijanasazdevska/foaf/main/foaf.ttl?fbclid=IwAR2L8tdtmJxHgCK-vqZUzMTf1vgnpOCXP0MuUYfCoNn8-9B6c_jYGECbxjw>
-  ] .
+<#me>   a                       foaf:Person ;
+        foaf:family_name        "Stojanovska" ;
+        foaf:givenname          "Tijana" ;
+        foaf:homepage           <https://mk.linkedin.com/in/tijana-stojanovska-83a34520b> ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://www.dropbox.com/s/z75y2xrotvh4g6i/foaf.ttl?dl=1> ;
+                                  foaf:mbox_sha1sum  "c76d892d6b6a27e0bf4101bcd3306de677782a0f" ;
+                                  foaf:name          "Viktor Ivanovski"
+                                ] ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://raw.githubusercontent.com/dijanasazdevska/foaf/main/foaf.ttl?fbclid=IwAR2L8tdtmJxHgCK-vqZUzMTf1vgnpOCXP0MuUYfCoNn8-9B6c_jYGECbxjw> ;
+                                  foaf:mbox_sha1sum  "c4304a571ef27211aa1157e1b45f6c66280955ff" ;
+                                  foaf:name          "Dijana Sazdevska"
+                                ] ;
+        foaf:mbox_sha1sum       "7bba26dd25256a2601948a97a22da2f50762c32b" ;
+        foaf:name               "Tijana Stojanovska" ;
+        foaf:nick               "Tiki" ;
+        foaf:schoolHomepage     <https://www.finki.ukim.mk/> ;
+        foaf:title              "Mrs" ;
+        foaf:workInfoHomepage   < https://dbpedia.org/page/Software_engineering> ;
+        foaf:workplaceHomepage  <https://nextsense.com/> .
